@@ -14,9 +14,8 @@ infoObject = pygame.display.Info()
 WINDOWWIDTH, WINDOWHEIGHT = pygame.display.Info().current_w, pygame.display.Info().current_h
 line10 = (WINDOWWIDTH-270)//20
 TEXTCOLOR = (0, 0, 0)
-background=pygame.image.load("image/car1.png")
 BACKGROUNDCOLOR = (245, 245, 220)
-pygame.image.load("image/car1.png")
+
 
 
 FPS = 100
@@ -89,7 +88,7 @@ pygame.display.set_caption('car race')
 pygame.mouse.set_visible(False)
 
 # fonts
-font = pygame.font.SysFont(None, 30)
+font = pygame.font.SysFont('Arial', 30)
 
 # sounds
 gameOverSound = pygame.mixer.Sound('music/crash.wav')
@@ -106,8 +105,8 @@ laugh = pygame.mixer.Sound('music/laugh.wav')
 #playerRect = playerImage.get_rect()
 #baddieImage = pygame.image.load('image/car2.png')
 #sample = [car3,car4,baddieImage]
-wallLeft = pygame.image.load('image/left.png')
-wallRight = pygame.image.load('image/right.png')
+#wallLeft = pygame.image.load('image/left.png')
+#wallRight = pygame.image.load('image/right.png')
 
 #knight version images
 playerImage = pygame.image.load('image/Knight.png')
@@ -117,8 +116,8 @@ arrow2 = pygame.image.load('image/arrows.png')
 playerRect = playerImage.get_rect()
 baddieImage = pygame.image.load('image/arrows.png')
 sample = [arrow1,arrow2,baddieImage]
-#wallLeft = pygame.image.load('image/Left_side.png')
-#wallRight = pygame.image.load('image/Right_side.png')
+wallLeft = pygame.image.load('image/Left_side.png')
+wallRight = pygame.image.load('image/Right_side.png')
 
 
 
